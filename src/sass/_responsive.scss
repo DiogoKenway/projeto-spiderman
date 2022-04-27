@@ -1,0 +1,17 @@
+@mixin tablet-mode() {
+    @media(max-width: 1100px) {
+        @content
+    }
+}
+
+@mixin mobile() {
+    @media(max-width: 550px) {
+        @content
+    }
+}
+
+@mixin small() {
+    @media(max-width: 450px) {
+        @content
+    }
+}

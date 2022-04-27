@@ -1,0 +1,84 @@
+.container {
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 20px 36px;
+    margin: 0 auto;
+
+    @include mobile() {
+        padding: 0 16px;
+        overflow-x: hidden;
+    }
+    
+
+    @include tablet-mode() {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+    .spider-info {
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        transform: translateY(-100px);
+        
+        @include tablet-mode() {
+            transform: translateY(-200px) !important;
+        }
+
+        @include mobile() {
+            gap: 8px;
+            padding: 0 8px;
+        }
+        
+
+
+        @include mobile() {
+            p {
+                font-size: 12px;
+            }
+        }
+        
+
+        .companies {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+
+            @include mobile() {
+                justify-content: center;
+            }
+        }
+    }
+
+
+}
+
+
+.bg-hero {
+    cursor: pointer;
+    @include tablet-mode() {
+        order: -1;
+        align-self: flex-end;
+    }
+    .spiderman {
+        max-width: 150%;
+        transform: translate(-170px, -30px);
+
+        @include tablet-mode() {
+            transform: translate(-70px, 0px);
+            max-width: 120%;
+        }
+
+        @include mobile() {
+            transform:  translate(-50px, 0px);
+        }
+    }
+}

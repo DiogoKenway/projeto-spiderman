@@ -1,0 +1,195 @@
+.modal {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: transparent;
+    overflow: hidden;
+    display: none;
+
+    &::after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $blue;
+        filter: opacity(.7) brightness(25%);
+    }
+
+    .modal-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: $white;
+        margin: 15% auto;
+        max-width: 600px;
+        box-shadow: 0 5px 8px $blue-dark, 0 7px 20px 0 $blue-dark;
+        position: relative;
+        border-radius: 3px;
+        min-height: 60%;
+
+        @include tablet-mode() {
+            grid-template-columns: auto;
+            margin: 25% auto;
+            max-width: 400px;
+            height: 50%;
+        }
+        
+        @include mobile() {
+            max-width: 300px;
+            margin: 50% auto;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: -3%;
+            right: 1%;
+            font-size: 2rem;
+            z-index: 2;
+            transition: all .5s ease;
+        
+            &:hover {
+                cursor: pointer;
+                color: $red-light;
+            }
+        }
+
+        .modal-content-left {
+            background: linear-gradient(90deg, $red-light 0%, $red-dark 100%);
+            border-radius: 0 3px 0 3px;
+            position: relative;
+
+            @include tablet-mode() {
+                display: none;
+            }
+
+            .modal-img {
+                width: 80%;
+                height: 80%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+
+        .modal-content-right {
+            border-radius: 0 3px 0 3px;
+            position: relative;
+            
+            .modal-form {
+                padding: 10px 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 90%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h2 {
+                    font-size: clamp(1.6rem, 3vw, 1.9rem);
+                    text-align: center;
+                    margin-bottom: .5rem;
+                    color: $blue-dark;
+                    line-height: 1.4;
+                }
+
+                .form-validation {
+                    margin-bottom: .5rem;
+                    width: 80%;
+
+                    p {
+                        font-size: 9px;
+                        margin: .5rem 0;
+                        color: $red;
+                        position: absolute;
+                        top: 1.7rem;
+                        display: none;
+                    }
+
+                    .modal-input {
+                        display: block;
+                        padding-left: .5rem;
+                        outline: none;
+                        border-radius: 2px;
+                        border: none;
+                        height: 2rem;
+                        width: 100%;
+                        box-shadow: 1px 1px 4px $blue-light;
+
+                        &::placeholder {
+                            color: $gray-2;
+                        }
+                    }
+                }
+
+                .input-btn {
+                    width: 80%;
+                    padding: 8px 0;
+                    height: 2rem;
+                    border-radius: 2px;
+                    background-color: $red-dark;
+                    outline: none;
+                    border: none;
+                    color: $white;
+                    font-size: 1rem;
+                    box-shadow: 2px 2px 4px $blue-dark;
+                    cursor: pointer;
+                    transition: all .5s ease;
+
+                    &:hover {
+                        background-color: $blue-light;
+                    }
+                    
+                    }
+
+                .input-btn-login {
+                    font-size: .8rem;
+                    margin-top: 1rem;
+                    color: $gray-2;
+                    width: 80%;
+                    text-align: center;
+                
+                    a {
+                        text-decoration: none;
+                        color: $red;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }    
+    }
+}
+
+
+/*=== apply class === */
+
+.form-validation.valid {
+    margin-bottom: .5rem;
+    position: relative;
+    border: solid 1px $validcolor;
+    border-radius: 2px;
+}
+
+.form-validation.error {
+    margin-bottom: 1.5rem !important;
+    position: relative;
+    border: solid 1px $errorcolor;
+    border-radius: 2px;
+    line-height: .2;
+
+    p {
+        display: block;
+    }
+}

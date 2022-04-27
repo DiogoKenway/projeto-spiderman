@@ -1,0 +1,106 @@
+.bg-animation {
+    top: 0;
+    left: 0;
+    position: fixed;
+    overflow-x: hidden;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        
+        background: linear-gradient(101.47deg, $blue-dark, 26.38%, rgba(10, 12, 16, .8) 33.07%, $blue-dark 73.17%);
+    }
+    
+}
+
+.bg-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    background: linear-gradient(90deg, $red 0%, $red-dark 100%);
+
+    .logo-spider {
+        fill: transparent;
+        animation: logo-spiderman 12s ease infinite alternate;
+    }
+}
+
+
+/* ===== ANIMAÇÕES =====*/
+
+@keyframes logo-spiderman {
+    0% {
+        stroke-width: 0;
+        stroke-dasharray: 1 100;
+        fill: transparent;
+    }
+    
+    25% {
+        stroke-width: 1;
+        fill: transparent;
+        stroke-dasharray: 100 0;
+    }
+
+    60%,100% {
+        stroke-width: 0.3;
+        fill: $white-dark;
+    }
+}
+
+
+@keyframes line {
+    0% {
+        stroke-dasharray: 250 75;
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dasharray: 500 5;
+        stroke-dashoffset: 1000;
+    }
+}
+
+
+.lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    .line1 {
+        animation: line 7s ease infinite alternate;
+    }
+
+    .line2 {
+        animation: line 4s ease .7s infinite alternate;
+    }
+
+    .line3 {
+        animation: line 6s ease 2s infinite alternate;
+    }
+
+    .line4 {
+        animation: line 5s ease infinite alternate;
+    }
+}
+
+

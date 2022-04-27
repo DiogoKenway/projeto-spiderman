@@ -1,0 +1,177 @@
+.container-gallery {
+    width: 100%;
+    height: 80%;
+    margin-bottom: 200px;
+
+    h1 {
+        font-size: clamp(2.5rem, 6vw, 4rem);
+        color: $white;
+        text-align: center;
+    }
+}
+
+.gallery {
+    z-index: 5;
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    max-height: 50vh;
+    overflow: hidden;
+    transition: all 1s ease;
+
+    &::after, &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 9.8%;
+        width: 20%;
+        height: 80.5%;
+        z-index: 3;
+        transition: all 1s ease;
+        
+
+        @include mobile() {
+            height: 40.2%;
+            top: 4.9%;
+        }
+    }
+
+    &::before {
+        left: 0;
+        background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+    
+    &::after {
+        right: 0;
+        background: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+}
+
+.gallery__stream {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+
+    .gallery__item {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        transition: all 1s ease;
+        background-size: cover;
+        border-radius: 10px;
+
+        @include mobile() {
+            height: 50%;
+        }
+
+        &:nth-child(1) {
+            left: 0;
+            z-index: 1;
+            transform: translateX(-100%) scale(.8);
+            
+        }
+
+        &:nth-child(2) {
+            left: 0;
+            z-index: 2;
+            transform: translateX(-50%) scale(.8);
+        }
+
+        &:nth-child(3) {
+            left: 50%;
+            z-index: 4;
+            transform: translateX(-50%) scale(1);
+        }
+
+        &:nth-child(4) {
+            left: 100%;
+            z-index: 2;
+            transform: translateX(-50%) scale(.8);
+        }
+
+        &:nth-child(n+5) {
+            left: 100%;
+            z-index: 1;
+            transform: scale(.8);
+        }
+    }
+}
+
+.bg-1 {
+    background: url(../../imgs/gallery/spider-man-miles-morales-01.jpg) center center no-repeat;
+}
+
+.bg-2 {
+    background: url(../../imgs/gallery/spider-man-miles-morales-02.jpg) center center no-repeat;
+}
+
+.bg-3 {
+    background: url(../../imgs/gallery/spider-man-miles-morales-03.jpg) center center no-repeat;
+}
+
+.bg-4 {
+    background: url(../../imgs/gallery/spider-man-miles-morales-04.jpg) center center no-repeat;
+}
+
+.bg-5 {
+    background: url(../../imgs/gallery/spider-man-miles-morales-05.jpg) center center no-repeat;
+}
+
+.bg-6 {
+    background: url(../../imgs/gallery/spider-man-miles-morales-06.jpg) center center no-repeat;
+}
+.bg-7 {
+    background: url(../../imgs/gallery/spider-man-miles-morales-07.jpg) center center no-repeat;
+}
+
+.bg-8 {
+    background: url(../../imgs/gallery/spider-man-miles-morales-08.jpg) center center no-repeat;
+}
+
+.bg-9 {
+    background: url(../../imgs/gallery/spider-man-miles-morales-09.jpg) center center no-repeat;
+}
+
+.bg-10 {
+    background: url(../../imgs/gallery/spider-man-miles-morales-10.jpg) center center no-repeat;
+}
+
+.bg-11 {
+    background: url(../../imgs/gallery/spider-man-miles-morales-11.jpg) center center no-repeat;
+}
+
+.bg-12 {
+    background: url(../../imgs/gallery/spider-man-miles-morales-12.jpg) center center no-repeat;
+}
+
+.bg-13 {
+    background: url(../../imgs/gallery/spider-man-miles-morales-13.jpg) center center no-repeat;
+}
+
+.bg-14 {
+    background: url(../../imgs/gallery/spider-man-miles-morales-14.jpg) center center no-repeat;
+}
+
+
+.gallery__prev, .gallery__next {
+    position: absolute;
+    top: 50%;
+    z-index: 4;
+    width: 50%;
+    height: 100%;
+    transform: translate(-50%, -50%) scale(.8);
+    cursor: pointer;
+}
+
+.gallery__prev {
+    left: 0;
+}
+
+.gallery__next {
+    left: 100%;
+}
