@@ -10,7 +10,7 @@ $('.js-tilt').tilt({
      tl.fromTo('.logo', .6, {y: -1000, opacity:1}, {y: 0, ease: Expo.easeInOut}, '-=0.5')
      tl.fromTo('.nav-list', .7, {y: -1000, opacity:1}, {y: 0, ease: Expo.easeInOut}, '-=0.5')
      tl.fromTo('.menu-mobile', .7, {y: -1000, opacity:1}, {y: 0, ease: Expo.easeInOut}, '-=0.5')
-     tl.fromTo('.nav-social', .7, {x: 1000, opacity:1}, {x: 0, ease: Expo.easeInOut}, '-=0.5')
+     tl.fromTo('.nav-social', .7, {y: -500, opacity:1}, {y: 0, ease: Expo.easeInOut}, '-=0.5')
      tl.fromTo('.tl-1', .7, {y: -1000, opacity:1}, {y: 0, ease: Expo.easeInOut}, '-=0.5')
      tl.fromTo('.tl-2', .7, {x: -1000, opacity:1}, {x: 0, ease: Expo.easeInOut}, '-=0.5')
      tl.fromTo('.tl-3', .7, {x: -1000, opacity:1}, {x: 0, ease: Expo.easeInOut}, '-=0.5')

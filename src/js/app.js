@@ -26,7 +26,7 @@ menuMobile.onclick = () => {
 
 
 window.addEventListener('resize', () => {
-    if (document.documentElement.clientWidth > 1100) {
+    if (document.documentElement.clientWidth > 1000) {
         navgation.classList.remove('active')
         navgation.classList.add('nav-list')
         menuMobile.classList.remove('is-active')
