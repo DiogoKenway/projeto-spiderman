@@ -19,6 +19,7 @@ function menuToggle(menu) {
 }
 
 
+
 menuMobile.onclick = () => {
     menuMobile.classList.toggle('is-active')
     menuToggle(navgation)
@@ -31,4 +32,8 @@ window.addEventListener('resize', () => {
         navgation.classList.add('nav-list')
         menuMobile.classList.remove('is-active')
     }
+})
+
+window.addEventListener('load', () => {
+    window.scrollTo(0, 0)
 })

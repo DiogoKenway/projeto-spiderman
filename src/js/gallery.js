@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let items = document.querySelectorAll('.gallery__item')
     const prev = document.querySelector('.gallery__prev')
     const next = document.querySelector('.gallery__next')
-    const bgBefore = document.styleSheets[0].cssRules[101]
-    const bgAfter = document.styleSheets[0].cssRules[102]
+    const bgBefore = document.styleSheets[0].cssRules[103]
+    const bgAfter = document.styleSheets[0].cssRules[104]
     const timer = setTimeout
 
     const deleteBackground = () => {

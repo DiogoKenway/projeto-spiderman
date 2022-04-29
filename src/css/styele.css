@@ -650,8 +650,8 @@
   background-color: #14181F;
   margin: 15% auto;
   max-width: 600px;
-  -webkit-box-shadow: 0 5px 8px #0A0C10, 0 7px 20px 0 #0A0C10;
-          box-shadow: 0 5px 8px #0A0C10, 0 7px 20px 0 #0A0C10;
+  -webkit-box-shadow: 0 3px 5px #272A31, 0 5px 10px 0 #0A0C10;
+          box-shadow: 0 3px 5px #272A31, 0 5px 10px 0 #0A0C10;
   position: relative;
   border-radius: 3px;
   min-height: 55%;
@@ -688,7 +688,7 @@
 
 .modal .modal-content .close-btn:hover {
   cursor: pointer;
-  color: #F02A2F;
+  color: #959698;
 }
 
 .modal .modal-content .modal-content-left {
@@ -852,18 +852,24 @@
   width: 100%;
   height: 80%;
   margin-bottom: 200px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  -ms-touch-action: none;
-      touch-action: none;
+}
+
+@media (max-width: 550px) {
+  .container-gallery {
+    height: 40%;
+  }
 }
 
 .container-gallery h1 {
   font-size: clamp(2.5rem, 6vw, 4rem);
   color: #EDF1F7;
   text-align: center;
+}
+
+@media (max-width: 550px) {
+  .container-gallery h1 {
+    margin-bottom: 3rem;
+  }
 }
 
 .gallery {
@@ -1063,6 +1069,10 @@ body {
   background-color: #0A0C10;
   font-family: 'Mukta', sans-serif;
   position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media (max-width: 1000px) {

@@ -29,7 +29,7 @@
         background-color: $blue;
         margin: 15% auto;
         max-width: 600px;
-        box-shadow: 0 5px 8px $blue-dark, 0 7px 20px 0 $blue-dark;
+        box-shadow: 0 3px 5px $blue-light, 0 5px 10px 0 $blue-dark;
         position: relative;
         border-radius: 3px;
         min-height: 55%;
@@ -58,7 +58,7 @@
         
             &:hover {
                 cursor: pointer;
-                color: $red-light;
+                color: $gray-3;
             }
         }
 

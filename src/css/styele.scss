@@ -25,7 +25,7 @@ body {
   background-color: $blue-dark;
   font-family: 'Mukta', sans-serif;
   position: relative;
-  
+  user-select: none;
 
   @include tablet-mode() {
     overflow-y: scroll;
