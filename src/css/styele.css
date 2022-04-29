@@ -1038,6 +1038,13 @@
   cursor: pointer;
 }
 
+@media (max-width: 550px) {
+  .gallery__prev, .gallery__next {
+    top: 20%;
+    height: 40%;
+  }
+}
+
 .gallery__prev {
   left: 0;
 }

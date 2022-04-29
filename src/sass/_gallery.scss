@@ -4,7 +4,7 @@
     margin-bottom: 200px;
     user-select: none;
     touch-action: none;
-
+    
     h1 {
         font-size: clamp(2.5rem, 6vw, 4rem);
         color: $white;
@@ -22,6 +22,7 @@
     max-height: 50vh;
     overflow: hidden;
     transition: all 1s ease;
+
 
     &::after, &::before {
         content: "";
@@ -168,6 +169,11 @@
     height: 100%;
     transform: translate(-50%, -50%) scale(.8);
     cursor: pointer;
+
+    @include mobile() {
+        top: 20%;
+        height: 40%;
+    }
 }
 
 .gallery__prev {
