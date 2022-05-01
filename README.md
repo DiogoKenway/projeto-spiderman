@@ -16,12 +16,12 @@ mas no PC você vai ter uma experiência muito mais rica e completa.** 💡
 
 **📚📚 As tecnologias (<a href="https://gijsroge.github.io/tilt.js/" target="_blank">Tilt JS</a>) & (<a href="https://greensock.com/gsap/)" target="_blank">GSAP</a>) são bibliotecas para animações muito completas para deixar sua pagina mais ricas e agradavel aos olhos de quem está acessando**
 
-### formulário
+### 🧾 formulário
 
 > **sobre o formulário ele testa uma lógica para cada campo, verifica cada um de uma forma diferente e também exibe um texto em vermelho (🖍️)
 abaixo caso o usuário deixou algum campo vazio...**
 
-### galeria
+### 🎞️ galeria
 > sobre a Galeria ela contém 14 imagens todas em alta qualidade, decidir não incluir a tag  ***PICTURE*** por que preferir deixar a resolução maxima das imagens para
   todos os dispositivos ao invéz de redimencionar cada uma delas.
 
