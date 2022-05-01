@@ -6,7 +6,7 @@ setTimeout(() => {
     document.body.style.overflowY = 'scroll'
     document.body.style.overflowX = 'hidden'
     
-}, 7000)
+}, 8000)
 
 function menuToggle(menu) {
     if (menu.classList.contains('nav-list')) {
