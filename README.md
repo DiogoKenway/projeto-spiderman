@@ -18,6 +18,11 @@ mas no PC você vai ter uma experiência muito mais rica e completa.** 💡
 
 ### 🧾 formulário
 
+* Nome
+* Email
+* Senha
+* Confirmação da Senha
+
 > **sobre o formulário ele testa uma lógica para cada campo, verifica cada um de uma forma diferente e também exibe um texto em vermelho (🖍️)
 abaixo caso o usuário deixou algum campo vazio...**
 
