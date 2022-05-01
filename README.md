@@ -1,3 +1,5 @@
+<img src="apresentacao.png" alt="imagem do projeto completo">
+
 <h1 align="center"><img src="./imgs/favicon-32x32.png"> Projeto Spider-Man Com Formulário e Galeria de Imagens <img src="./imgs/favicon-32x32.png"></h1>
 
 <h2 align="center">Sobre</h2>
@@ -14,7 +16,9 @@ mas no PC você vai ter uma experiência muito mais rica e completa.** 💡
 - TILT JS
 - GSAP
 
+
 **📚📚 As tecnologias (<a href="https://gijsroge.github.io/tilt.js/" target="_blank">Tilt JS</a>) & (<a href="https://greensock.com/gsap/)" target="_blank">GSAP</a>) são bibliotecas para animações muito completas para deixar sua pagina mais ricas e agradavel aos olhos de quem está acessando**
+
 
 ### 🧾 formulário
 
@@ -29,5 +33,10 @@ abaixo caso o usuário deixou algum campo vazio...**
 ### 🎞️ galeria
 > sobre a Galeria ela contém 14 imagens todas em alta qualidade, decidir não incluir a tag  ***PICTURE*** por que preferir deixar a resolução maxima das imagens para
   todos os dispositivos ao invéz de redimencionar cada uma delas.
+
+
+### Projeto Completo
+
+<img src="apresentacao.gif" alt="exibição do projeto completo">
 
 👉 [click aqui para ver](https://diogokenway.github.io/projeto-spiderman/#gallery,  "Spider-Man Miles Morales") 👈
