@@ -6,7 +6,7 @@
 incluir um formulário e também uma galeria de imagens para dar mais interatividade para quem visita o site,, ele está responsivo para todas as resoluções
 mas no PC você vai ter uma experiência muito mais rica e completa.** 💡
 
-### 🧙🧙 Tecnologias Utilizas 😁😁
+### 🧙🧙 Tecnologias Utilizas 😁😉😁
 
 - HTML
 - CSS Com SASS
