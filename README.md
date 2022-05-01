@@ -1,7 +1,6 @@
 <h1 align="center">Projeto Spider-Man Com Formulário e Galeria de Imagens</h1>
 
-<p align="center">Este Projeto é uma Landing Page um Pouco mais entusiasta Com muitas animações</p>
-<p align="center">Decidir também incluir um formulário e também uma galeria de imagens</p>
+> <h4>Este Projeto é uma Landing Page um Pouco mais entusiasta Com muitas animações e também decidir incluir um formulário e uma galeria de imagens...</h4>
 
 
-[Spider-Man-Miles-Morales](https://diogokenway.github.io/projeto-spiderman/#gallery,  "Click Aqui para ver o projeto")
+:mage_man::point_right:[confira aqui o projeto](https://diogokenway.github.io/projeto-spiderman/#gallery,  "Spider-Man Miles Morales"):mage_man:
