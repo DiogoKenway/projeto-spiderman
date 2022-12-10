@@ -18,7 +18,7 @@
 >incluir um formulário e também uma galeria de imagens para dar mais interatividade para quem visita o site,, ele está responsivo para todas as resoluções
 >mas no PC você vai ter uma experiência muito mais rica e completa.💡</p>**
 
-<h2 id="tecnologias"> 🧙🧙 Tecnologias Utilizas 😁😉😁 </h2> 
+<h2 id="tecnologias"> 🧙🧙 Tecnologias Utilizadas 😁😉😁 </h2> 
 
 - HTML
 - CSS Com SASS
@@ -43,7 +43,6 @@
 
 > <p>sobre a Galeria ela contém 14 imagens todas em alta qualidade, decidir não incluir a tag    <strong>PICTURE</strong> por que preferir deixar a resolução maxima das imagens para
 >todos os dispositivos ao invéz de redimencionar cada uma delas.</p>
-
 
 <h2 id="projeto">Projeto Completo </h2>
 
